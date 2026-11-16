@@ -6,6 +6,7 @@ RUN apt-get update \
 
 WORKDIR /app
 COPY viaproxy /app/viaproxy
+COPY web /app/web
 COPY start.sh /app/start.sh
 RUN chmod +x /app/start.sh
 
