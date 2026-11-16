@@ -8,6 +8,7 @@ WORKDIR /app
 COPY viaproxy /app/viaproxy
 COPY web /app/web
 COPY start.sh /app/start.sh
+# cache-bust 1
 RUN chmod +x /app/start.sh
 
 ENV PORT=10000
